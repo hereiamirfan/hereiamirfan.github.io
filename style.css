@@ -153,6 +153,8 @@
     .skl .in,.inr{
         flex: 100%;
     }
+    .inr ul{
+        width:100%;
 }
 .foot{
     padding: 10px 0;
