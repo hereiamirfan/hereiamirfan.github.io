@@ -5,6 +5,25 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.lin {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 30px;
+    background-color: rgb(220, 216, 226);
+    text-align: center;
+    align-content: space-around;
+    color: #0077b5;
+    box-shadow: 0 0 5px black;
+}
+.lin a{
+    display: block;
+    text-decoration: none;
+}
 .head .name {
     padding: 20px 20px;
     background-color: rgb(212, 212, 212);
@@ -14,7 +33,8 @@
     font-weight: bold;
     letter-spacing: 5px;
 }
-.head{
+
+.head {
     box-shadow: 5px 0px 5px black;
     position: relative;
     z-index: 1;
@@ -85,14 +105,55 @@
     .left span {
         font-size: 25px;
     }
-    .head .name{
+
+    .head .name {
         font-size: 18px;
     }
 }
-.skl .in{
-    background-color: bisque;
-    font-size: 36px;
-    text-align: center;
+.skl{
+    display: flex;
+    background-color: rgb(238, 234, 229);
+
+}
+.skl .in {
+    flex: 50%;
+    font-size: 20px;
     height: auto;
-    padding: 30px 0 ;
+    padding: 30px 20px;
+}
+.skl span{
+    font-size: 18px;
+}
+.skl h3{
+    color: blueviolet;
+}
+.skl .inr {
+    flex: 50%;
+    font-size: 20px;
+    height: auto;
+    padding: 30px 20px;
+}
+.inr ul{
+    width: 40%;
+    margin: auto;
+    list-style-type: none;
+    padding: 0;
+}
+.inr ul li{
+    padding: 10px 0;
+}
+@media(max-width: 700px){
+    .skl{
+        flex-direction: column;
+        text-align: center;
+    }
+    .skl .in,.inr{
+        flex: 100%;
+    }
+}
+.foot{
+    padding: 10px 0;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;   
 }
