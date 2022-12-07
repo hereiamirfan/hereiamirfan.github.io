@@ -157,8 +157,10 @@
         width:100%;
 }
 .foot{
-    padding: 10px 0;
+    height: 20px;
+    width: 100%;
     text-align: center;
+    line-height:20px;
     background-color: blueviolet;
-    color: white;   
+    color: white;
 }
