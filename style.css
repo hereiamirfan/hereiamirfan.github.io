@@ -18,12 +18,14 @@
     text-align: center;
     align-content: space-around;
     color: #0077b5;
-    box-shadow: 0 0 5px black;
+    animation: abc 1s infinite;
 }
-.lin a{
+
+.lin a {
     display: block;
     text-decoration: none;
 }
+
 .head .name {
     padding: 20px 20px;
     background-color: rgb(212, 212, 212);
@@ -32,8 +34,8 @@
     font-size: 26px;
     font-weight: bold;
     letter-spacing: 5px;
-    position:sticky;
-    top:0;
+    position: sticky;
+    top: 0;
 }
 
 .head {
@@ -114,58 +116,81 @@
         font-size: 18px;
     }
 }
-.skl{
+
+.skl {
     display: flex;
     align-items: center;
     background-color: rgb(238, 234, 229);
 
 }
+
 .skl .in {
     flex: 50%;
     font-size: 20px;
     height: auto;
     padding: 30px 20px;
 }
-.skl span{
+
+.skl span {
     font-size: 18px;
 }
-.skl h3{
+
+.skl h3 {
     color: blueviolet;
 }
+
 .skl .inr {
     flex: 50%;
     font-size: 20px;
     height: auto;
     padding: 30px 20px;
 }
-.inr ul{
+
+.inr ul {
     width: 50%;
     margin: auto;
     list-style-type: none;
     padding: 0;
 }
-.inr ul li{
+
+.inr ul li {
     padding: 10px 0;
 }
-@media(max-width: 700px){
-    .skl{
+
+@media(max-width: 700px) {
+    .skl {
         flex-direction: column;
         text-align: center;
     }
-    .skl .in,.inr{
+
+    .skl .in,
+    .inr {
         flex: 100%;
     }
-    .inr ul{
+
+    .inr ul {
         width: 100%;
     }
 }
-.container .foot{
-    height:30px;
+
+.container .foot {
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     text-align: center;
     background-color: blueviolet;
-    color: white;   
+    color: white;
+
+}
+
+@keyframes abc {
+    from {
+        box-shadow: 0 0 10px red;
+    }
+
+    to {
+        box-shadow: 0 0 10px blue;
+    }
 }
