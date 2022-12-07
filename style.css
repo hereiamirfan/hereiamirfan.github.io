@@ -48,6 +48,7 @@
     height: 500px auto;
     background-color: rgb(212, 212, 212);
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     padding: 30px 0;
 }
@@ -74,7 +75,7 @@
 }
 
 .left .wrap {
-    padding: 200px 50px;
+    padding: 0 50px;
 }
 
 .main .right {
@@ -115,6 +116,7 @@
 }
 .skl{
     display: flex;
+    align-items: center;
     background-color: rgb(238, 234, 229);
 
 }
@@ -154,13 +156,16 @@
         flex: 100%;
     }
     .inr ul{
-        width:100%;
+        width: 100%;
+    }
 }
-.foot{
-    height: 20px;
+.container .foot{
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     text-align: center;
-    line-height:20px;
     background-color: blueviolet;
-    color: white;
+    color: white;   
 }
