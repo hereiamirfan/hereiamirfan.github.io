@@ -30,10 +30,10 @@
     padding: 20px 20px;
     background-color: rgb(212, 212, 212);
     color: blueviolet;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Sofia", sans-serif;
     font-size: 26px;
     font-weight: bold;
-    letter-spacing: 5px;
+    text-transform: capitalize;
     position: sticky;
     top: 0;
 }
@@ -126,7 +126,6 @@
 
 .skl .in {
     flex: 50%;
-    font-size: 20px;
     height: auto;
     padding: 30px 20px;
 }
@@ -263,4 +262,5 @@
 
 .title {
     color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
