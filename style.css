@@ -132,11 +132,7 @@
 }
 
 .skl span {
-    font-size: 18px;
-}
-
-.skl h3 {
-    color: blueviolet;
+    font-size: 16px;
 }
 
 .skl .inr {
@@ -160,16 +156,20 @@
 @media(max-width: 700px) {
     .skl {
         flex-direction: column;
+    }
+    .skl .in span{
+        text-align: justify;
+    }
+    .skl .inr span{
         text-align: center;
     }
-
     .skl .in,
     .inr {
         flex: 100%;
     }
 
     .inr ul {
-        width: 100%;
+        width: auto;
     }
 }
 
@@ -193,4 +193,74 @@
     to {
         box-shadow: 0 0 10px blue;
     }
+}
+
+.edu {
+    padding: 60px 30px;
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    ;
+}
+
+
+
+.edu div {
+    flex: 50%;
+}
+
+
+.edu .eds div {
+    margin-bottom: 10px;
+}
+
+.eds h4 {
+    color: blueviolet;
+}
+
+@media (max-width:768px) {
+    .edu {
+        flex-direction: column;
+    }
+
+    .edu .tit {
+        padding: 20px 0;
+    }
+
+}
+
+.exp {
+    padding: 60px 30px;
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    ;
+}
+
+
+
+.exp div {
+    flex: 50%;
+}
+
+
+.exp .det div {
+    margin-bottom: 10px;
+}
+
+.det h4 {
+    color: blueviolet;
+}
+
+@media (max-width:768px) {
+    .exp {
+        flex-direction: column;
+    }
+
+    .exp .tet {
+        padding: 20px 0;
+    }
+
+}
+
+.title {
+    color: blueviolet;
 }
