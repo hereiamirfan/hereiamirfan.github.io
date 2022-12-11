@@ -5,262 +5,232 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.lin {
-    width: 60px;
+/* linkedin css start */
+.linkedin {
     height: 60px;
-    border-radius: 50%;
-    line-height: 60px;
+    width: 60px;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
     font-size: 30px;
-    background-color: rgb(220, 216, 226);
     text-align: center;
-    align-content: space-around;
-    color: #0077b5;
+    line-height: 60px;
     animation: abc 1s infinite;
 }
 
-.lin a {
+.linkedin a {
+    margin: auto;
+    color: #0077b5;
     display: block;
     text-decoration: none;
 }
 
-.head .name {
-    padding: 20px 20px;
-    background-color: rgb(212, 212, 212);
-    color: blueviolet;
-    font-family: "Sofia", sans-serif;
-    font-size: 26px;
-    font-weight: bold;
-    text-transform: capitalize;
-    position: sticky;
-    top: 0;
+@keyframes abc {
+    0% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow: 0 0 15px green;
+    }
+
+    100% {
+        box-shadow: 0 0 15px red;
+    }
 }
 
+/* linkedin css end  */
+/* css for title  */
+.title {
+    font-size: 30px;
+    margin: 10px 0;
+    color: green;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 10px 0;
+    color: green;
+}
+
+/* css title end  */
+/* head css */
 .head {
-    box-shadow: 5px 0px 5px black;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.main {
+    height: 80px;
     width: 100%;
-    height: 500px auto;
-    background-color: rgb(212, 212, 212);
+    padding: 0px 30px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 30px 0;
+    justify-content: center;
+    background-color: green;
+    position: sticky;
+    top: 0;
+}
+
+.head span {
+    font-size: 30px;
+    font-family: "Sofia", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* head css end */
+/* main css start */
+.main {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 247, 247);
 }
 
 .main .left {
-    flex: 50%;
-    background-color: rgb(212, 212, 212);
+    width: 100%;
+    height: auto;
 }
 
-.left span {
-    font-size: 45px;
+.main .left img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
 }
 
-.left .but {
-    margin-top: 35px;
+.main .right span {
+    font-size: 36px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.left .but a {
+.right .but a {
     padding: 15px 30px;
     color: #ffffff;
-    background-color: blueviolet;
+    background-color: green;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Helvetica, sans-serif;
 }
 
-.left .wrap {
-    padding: 0 50px;
+.main .right div {
+    margin: 30px 0px;
 }
 
-.main .right {
-    flex: 50%;
-    padding: 10px;
-}
-
-.right .img {
-    height: 100%;
-    width: 100%;
-}
-
-.img img {
-    width: 100%;
-    border-radius: 30px;
-}
-
-@media (max-width: 700px) {
+@media (min-width:768px) {
     .main {
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
+        align-items: center;
     }
 
-    .left .wrap {
-        padding: 50px 10px;
+    .main .left,
+    .right {
+        flex: 50%;
     }
 
-    .left span {
-        font-size: 30px;
+    .main .right {
+        padding: 0 30px;
     }
 
-    .left span {
-        font-size: 25px;
+    .main .right span {
+        font-size: 50px;
     }
 
-    .head .name {
-        font-size: 18px;
+    .right .but a:hover {
+        background-color: rgb(3, 150, 3);
     }
 }
 
-.skl {
+/* main css end */
+/* about css start */
+.about {
+    padding: 30px;
+    background-color: #f2f2f2;
     display: flex;
-    align-items: center;
-    background-color: rgb(238, 234, 229);
+    flex-direction: column;
+}
+
+.about .des .span {
+    text-align: justify;
+}
+
+.about .des,
+.skill {
+    padding: 30px 0;
+}
+
+.about .skill ul {
+    list-style: none;
+}
+
+.about .skill ul li {
+    margin-top: 10px;
+}
+
+@media (min-width:768px) {
+    .about {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about .des,
+    .skill {
+        flex: 50%;
+    }
+
+    .about .skill ul {
+        width: 50%;
+        margin: auto;
+    }
 
 }
 
-.skl .in {
+/* about css end  */
+/* edu css */
+.edu,
+.exp {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.exp div {
+    margin: 10px 0;
+}
+
+.edu div {
+    margin: 10px 0;
+}
+
+.edu .tit,
+.eds {
     flex: 50%;
-    height: auto;
-    padding: 30px 20px;
 }
 
-.skl span {
-    font-size: 16px;
-}
+@media (min-width: 768px) {
 
-.skl .inr {
-    flex: 50%;
-    font-size: 20px;
-    height: auto;
-    padding: 30px 20px;
-}
-
-.inr ul {
-    width: 50%;
-    margin: auto;
-    list-style-type: none;
-    padding: 0;
-}
-
-.inr ul li {
-    padding: 10px 0;
-}
-
-@media(max-width: 700px) {
-    .skl {
-        flex-direction: column;
-    }
-    .skl .in span{
-        text-align: justify;
-    }
-    .skl .inr span{
-        text-align: center;
-    }
-    .skl .in,
-    .inr {
-        flex: 100%;
+    .edu,
+    .exp {
+        flex-direction: row;
     }
 
-    .inr ul {
-        width: auto;
+
+
+    .exp .titl,
+    .detl {
+        flex: 50%;
     }
+
 }
 
-.container .foot {
+/* edu end */
+/* footer css start*/
+.footer {
     height: 30px;
+    width: 100%;
+    background-color: green;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    text-align: center;
-    background-color: blueviolet;
-    color: white;
-
 }
 
-@keyframes abc {
-    from {
-        box-shadow: 0 0 10px red;
-    }
-
-    to {
-        box-shadow: 0 0 10px blue;
-    }
-}
-
-.edu {
-    padding: 60px 30px;
-    display: flex;
-    background-color: rgb(236, 236, 236);
-    ;
-}
-
-
-
-.edu div {
-    flex: 50%;
-}
-
-
-.edu .eds div {
-    margin-bottom: 10px;
-}
-
-.eds h4 {
-    color: blueviolet;
-}
-
-@media (max-width:768px) {
-    .edu {
-        flex-direction: column;
-    }
-
-    .edu .tit {
-        padding: 20px 0;
-    }
-
-}
-
-.exp {
-    padding: 30px 30px;
-    display: flex;
-    background-color: rgb(236, 236, 236);
-    ;
-}
-
-
-
-.exp div {
-    flex: 50%;
-}
-
-
-.exp .det div {
-    margin-bottom: 10px;
-}
-
-.det h4 {
-    color: blueviolet;
-}
-
-@media (max-width:768px) {
-    .exp {
-        flex-direction: column;
-    }
-
-    .exp .ttl {
-        padding: 20px 0;
-    }
-
-}
-
-.title {
-    color: blueviolet;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+/* footer css end  */
