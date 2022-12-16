@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tictactoe.css">
+    <script src="tictactoe.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="ttt">
+        Tic Tac Toe
+    </div>
+    <div class="main">
+        <div class="span" id="turn">Player X Turn</div>
+        <div class="outer">
+            <div class="row">
+                <input type="text" readonly class="cells" id="c1" onclick="cel1();ttt()">
+                <input type="text" readonly class="cells" id="c2" onclick="cel2();ttt()">
+                <input type="text" readonly class="cells" id="c3" onclick="cel3();ttt()">
+            </div>
+            <div class="row">
+                <input type="text" readonly class="cells" id="c4" onclick="cel4();ttt()">
+                <input type="text" readonly class="cells" id="c5" onclick="cel5();ttt()">
+                <input type="text" readonly class="cells" id="c6" onclick="cel6();ttt()">
+            </div>
+            <div class="row">
+                <input type="text" readonly class="cells" id="c7" onclick="cel7();ttt()">
+                <input type="text" readonly class="cells" id="c8" onclick="cel8();ttt()">
+                <input type="text" readonly class="cells" id="c9" onclick="cel9();ttt()">
+            </div>
+        </div>
+        <div class="reset">
+            <button onclick="location.reload()">Play Again</button>
+        </div>
+        <div class="span" id="tie"></div>
+
+    </div>
+
+</body>
+
+</html>
