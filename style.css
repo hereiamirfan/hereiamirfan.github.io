@@ -223,6 +223,37 @@
 }
 
 /* edu end */
+/* project starts from here  */
+.project {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project div {
+    margin: 10px 0;
+}
+
+.project .play a {
+    padding: 6px 15px;
+    color: #ffffff;
+    background-color: green;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+}
+
+@media (min-width:768px) {
+    .project {
+        flex-direction: row;
+    }
+
+    .project div {
+        flex: 50%;
+    }
+
+}
+
+/* project ends here */
 /* footer css start*/
 .footer {
     height: 30px;
