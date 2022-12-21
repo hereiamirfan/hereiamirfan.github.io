@@ -171,12 +171,12 @@ function ttt() {
         document.getElementById('c9').style.backgroundColor="white";
         document.getElementById('c3').style.backgroundColor="white";
         document.getElementById('turn').innerHTML="player 0 wins";
-        document.getElementById(c1).disabled = true;
-        document.getElementById(c2).disabled = true;
-        document.getElementById(c4).disabled = true;
-        document.getElementById(c5).disabled = true;
-        document.getElementById(c7).disabled = true;
-        document.getElementById(c8).disabled = true;
+        document.getElementById('c1').disabled = true;
+        document.getElementById('c2').disabled = true;
+        document.getElementById('c4').disabled = true;
+        document.getElementById('c5').disabled = true;
+        document.getElementById('c7').disabled = true;
+        document.getElementById('c8').disabled = true;
     }
     else if ((b4 == '0') && (b5 == '0') && (b6 == '0')) {
         document.getElementById('c4').style.backgroundColor="white";
