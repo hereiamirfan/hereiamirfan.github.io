@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+}
+.cont{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont .cal{
+  width: 350px;
+  height: auto;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(121, 118, 118);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #945555;
+}
+.cal input{
+  height: 100px;
+  width: 100%;
+  font-size: 30px;
+  border: none;
+  outline: 0;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.cal div{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.cal .but1 input{
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 100%;
+  font-size: 20px;
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: -4px -4px 8px rgba(148, 140, 140, 0.2);
+}
+.cal .but1 input.beq{
+  background-color: rgb(243, 120, 5);
+}
+.cal .but1 input.oper{
+  color: rgb(0, 0, 0);
+}
+.cal .but1 input.de, .but1 input.beq{
+  width: calc(70px*2);
+  border-radius: 25px;
+}
+.cal .but1 input:active{
+  transform: scale(90%);
+}
+@media (max-width:700px) {
+  .cont .cal{
+    width: 100%;
+    height: 100vh;
+  }
+  
+}
