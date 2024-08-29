@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+    scroll-behavior: smooth ;
 }
 
 /* linkedin css start */
@@ -72,8 +73,9 @@
   top: 0;
 }
 
-.head span {
+.head a {
   font-size: 30px;
+  text-decoration: none;
   font-family: "Sofia", sans-serif;
   color: rgb(255, 255, 255);
 }
